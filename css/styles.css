@@ -18,7 +18,12 @@ a.text-light:focus,
 a.text-light:hover{
     color: #ffffff!important;
 }
-
+a:hover{
+    text-decoration: none;
+}
+a:visited{
+    color: #ffffff;
+}
 /**Login**/
 body.login{
     background-image: url(../img/libros.jpg);
@@ -76,4 +81,9 @@ main{
 }
 .boton a:hover{
     text-decoration: none;
+}
+
+/**Ventas**/
+#ventas {
+    height: 250px;
 }

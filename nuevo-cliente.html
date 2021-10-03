@@ -9,8 +9,88 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
   </head>
- 
-      
+  <body>
+    <nav class="navbar bd-navbar navbar-expand-lg navbar-dark bg-primary">
+      <a href="#" class="navbar-brand">Administración libreria</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navegacion">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse z" id="navegacion">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <form action="#" class="my-2 my-lg-0">
+                <input type="search" class="form-control" placeholder="Buscar...">
+              </form>
+            </div><!--.col-->
+            <div class="col-sm-2 mt-sm-2 mt-lg-0 text-right">
+              <a href="#" class="btn btn-success px-5 text-light">Perfil</a>
+            </div>
+          </div><!--.row-->
+        </div><!--.container-->
+      </div>
+    </nav> 
+    <aside class="bg-dark p-4">
+      <h3 class="text-light text-center">Navegación</h3>
+      <ul class="nav flex-column mt-5">
+        <li class="nav-link text-light d-flex align-items-center">
+          <i class="material-icons mr-2">contacts</i>
+          <a href="clientes.html">Clientes</a>
+        </li>
+        <li class="nav-link text-light d-flex align-items-center">
+          <i class="material-icons mr-2">attach_money</i>
+          <a href="ventas.html">Ventas</a>
+        </li>
+        <li class="nav-link text-light d-flex align-items-center">
+          <i class="material-icons mr-2">dvr</i>
+          Inventario
+        </li>
+        <li class="nav-link text-light d-flex align-items-center">
+          <i class="material-icons mr-2">account_box</i>
+          Vendedores
+        </li>
+      </ul>
+    </aside>
+    <main class="pt-4">
+      <div class="container">
+        <h2 class="text-center mb-4">Nuevo Cliente</h2>
+        <div class="row">
+          <div class="col">
+            <form action="#" class="needs-validation" novalidate>
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre"
+                placeholder="Nombre del cliente" required>
+                <div class="invalid-feedback">
+                  Este campo es obligatorio
+                </div>
+                <div class="valid-feedback">
+                  Correcto
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" class="form-control" id="apellido"
+                placeholder="Apellido del cliente">
+              </div>
+              <div class="form-group">
+                <label for="correo">Correo</label>
+                <input type="email" class="form-control" id="correo"
+                placeholder="E-mail del cliente" required>
+                <div class="invalid-feedback">
+                  Email inválido!
+                </div>
+                <div class="valid-feedback">
+                  Correcto
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Agregar Cliente</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>

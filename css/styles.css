@@ -14,6 +14,10 @@ html{
 body{
     min-height: 100%;
 }
+a.text-light:focus,
+a.text-light:hover{
+    color: #ffffff!important;
+}
 
 /**Login**/
 body.login{
@@ -30,4 +34,46 @@ body.login .contenido{
 .btn-primary,
 .bg-primary {
     background-color: var(--segundo)!important;
+}
+.btn-success,
+.bg-success {
+    background-color: var(--primero);
+
+}
+.btn-success{
+    border-color: var(--primero);
+}
+
+/**Clientes**/
+/**navbar**/
+.bd-navbar{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/**Aside**/
+aside{
+    z-index: 1;
+    width: 260px;
+    height: 100vh;
+    position: absolute;    
+}
+
+/**Main**/
+main{
+    margin-left: 260px;
+    position: relative;
+    left: 0;
+    min-height: 100%;
+}
+.boton {
+    min-height: 120px;
+}
+.boton i{
+    font-size: 3rem;
+}
+.boton a:hover{
+    text-decoration: none;
 }
